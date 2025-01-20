@@ -1,6 +1,12 @@
+/* General Styles */
+html {
+    background-color: black;
+    font-size: 2vw;
+    font-family: "Roboto", Helvetica, sans-serif;
+}
+
 /* Header Styles */
 header {
-    background-color: black;
     position: fixed;
     display: flex;
     align-items: center;
@@ -9,6 +15,7 @@ header {
     height: 75px;
     width: 100%;
     padding: 5px 20px;
+    z-index: 1;
 }
 
 #logo {
@@ -21,7 +28,6 @@ header {
 
 .nav-links {
     display: inline;
-    font-family: "Roboto", Helvetica, sans-serif;
     font-size: 18px;
 }
 
@@ -42,4 +48,44 @@ header {
 .nav-links a:focus,
 .nav-links a:active {
     background-color: #222;
+}
+
+/* Main Styles */
+main {
+    position: relative;
+    top: 75px;
+}
+
+/* Page Hero */
+#page-hero {
+    background-image: url("../images/Page_Hero_Img.png");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    width: 100%;
+    height: 700px;
+    display: flex;
+    align-items: center;
+}
+
+#page-hero h1 {
+    background-color: #fffa;
+    margin: 0 auto;
+    font-size: 2.5rem;
+    font-weight: 500;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 768px) {
+    header nav {
+        display: none;
+    }
+
+    #logo {
+        margin: 0 auto;
+    }
+
+    #page-hero h1 {
+        font-size: 38.4px;
+    }
 }
