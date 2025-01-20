@@ -5,8 +5,22 @@ html {
     font-family: "Roboto", Helvetica, sans-serif;
 }
 
+p {
+    font-size: 16px;
+    font-family: Courier, monospace;
+}
+
+p+p {
+    margin-top: 15px;
+}
+
+button {
+    color: black;
+}
+
 /* Header Styles */
 header {
+    background-color: black;
     position: fixed;
     display: flex;
     align-items: center;
@@ -60,7 +74,7 @@ main {
 #page-hero {
     background-image: url("../images/Page_Hero_Img.png");
     background-repeat: no-repeat;
-    background-position: top;
+    background-position: center;
     background-size: cover;
     width: 100%;
     height: 700px;
@@ -75,6 +89,39 @@ main {
     font-weight: 500;
 }
 
+/* Play Banner */
+#play-banner {
+    padding: 25px;
+    background-color: white;
+    display: grid;
+    grid-template-areas: "article button1"
+                         "article button2"
+                         "article .";
+    grid-template-rows: repeat(2, 1.5em) 1fr;
+    grid-template-columns: 2fr 1fr;
+    gap: 15px;
+}
+
+#play-banner article {
+    grid-area: article;
+}
+
+#button-one {
+    grid-area: button1;
+}
+
+#button-two {
+    grid-area: button2;
+}
+
+.play-buttons {
+    width: 100%;
+    height: 100%;
+    border: 2px solid #333;
+    border-radius: 5px;
+    font-size: 0.75rem;
+}
+
 /* Media Queries */
 @media only screen and (max-width: 768px) {
     header nav {
@@ -87,5 +134,30 @@ main {
 
     #page-hero h1 {
         font-size: 38.4px;
+    }
+
+    #play-banner {
+        grid-template-areas: "button1 button2"
+                             "article article";
+        grid-template-rows: 3em 1fr;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .play-buttons {
+        font-size: 1.5rem;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    #play-banner {
+        grid-template-areas: "button1"
+                             "button2"
+                             "article";
+        grid-template-rows: repeat(2, 5em) 1fr;
+        grid-template-columns: 1fr;
+    }
+
+    .play-buttons {
+        font-size: 2.5rem;
     }
 }
