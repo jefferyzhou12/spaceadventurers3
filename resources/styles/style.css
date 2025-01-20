@@ -48,6 +48,12 @@ header {
     background-color: #222;
 }
 
+/* Main Styles */
+main {
+    position: relative;
+    top: 75px;
+}
+
 /* Media Queries */
 @media only screen and (max-width: 768px) {
     header nav {
