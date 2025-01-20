@@ -1,0 +1,45 @@
+/* Header Styles */
+header {
+    background-color: black;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    height: 75px;
+    width: 100%;
+    padding: 5px 20px;
+}
+
+#logo {
+    height: 65px;
+}
+
+#logo img {
+    height: 100%;
+}
+
+.nav-links {
+    display: inline;
+    font-family: "Roboto", Helvetica, sans-serif;
+    font-size: 18px;
+}
+
+.nav-links+.nav-links::before {
+    color: white;
+    content: "|";
+}
+
+.nav-links a {
+    display: inline-block;
+    padding: 15px 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+}
+
+.nav-links a:hover,
+.nav-links a:focus,
+.nav-links a:active {
+    background-color: #222;
+}
