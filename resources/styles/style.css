@@ -5,6 +5,15 @@ html {
     font-family: "Roboto", Helvetica, sans-serif;
 }
 
+p {
+    font-size: 16px;
+    font-family: Courier, monospace;
+}
+
+p+p {
+    margin-top: 15px;
+}
+
 /* Header Styles */
 header {
     position: fixed;
@@ -73,6 +82,31 @@ main {
     margin: 0 auto;
     font-size: 2.5rem;
     font-weight: 500;
+}
+
+/* Play Section */
+#play-section {
+    padding: 25px;
+    background-color: white;
+    display: grid;
+    grid-template-areas: "article button1"
+                         "article button2"
+                         "article .";
+    grid-template-rows: repeat(2, 1.5em) 1fr;
+    grid-template-columns: 2fr 1fr;
+    gap: 15px;
+}
+
+#play-section article {
+    grid-area: article;
+}
+
+#button-one {
+    grid-area: button1;
+}
+
+#button-two {
+    grid-area: button2;
 }
 
 /* Media Queries */
