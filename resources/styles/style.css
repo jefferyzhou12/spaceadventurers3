@@ -1,6 +1,5 @@
 /* General Styles */
 html {
-    background-color: black;
     font-size: 2vw;
     font-family: "Roboto", Helvetica, sans-serif;
 }
@@ -131,6 +130,9 @@ main {
 .play-buttons:active {
     background-color: #ddd;
 }
+
+/* Mission Banner */
+
 
 /* Media Queries */
 @media only screen and (max-width: 768px) {
