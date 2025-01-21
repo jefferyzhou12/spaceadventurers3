@@ -21,6 +21,10 @@ em {
     font-style: italic;
 }
 
+h2 {
+    margin-bottom: 15px;
+}
+
 /* Header Styles */
 header {
     background-color: black;
@@ -142,6 +146,7 @@ main {
 
 #mission-banner div {
     background-color: #0008;
+    padding: 25px;
 }
 
 /* Media Queries */
