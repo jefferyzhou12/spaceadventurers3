@@ -132,7 +132,17 @@ main {
 }
 
 /* Mission Banner */
+#mission-banner {
+    color: white;
+    background-image: url("../images/Background-Img.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
 
+#mission-banner div {
+    background-color: #0008;
+}
 
 /* Media Queries */
 @media only screen and (max-width: 768px) {
