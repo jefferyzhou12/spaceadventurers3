@@ -18,6 +18,10 @@ button {
     color: black;
 }
 
+em {
+    font-style: italic;
+}
+
 /* Header Styles */
 header {
     background-color: black;
@@ -120,6 +124,12 @@ main {
     border: 2px solid #333;
     border-radius: 5px;
     font-size: 0.75rem;
+}
+
+.play-buttons:hover,
+.play-buttons:focus,
+.play-buttons:active {
+    background-color: #ddd;
 }
 
 /* Media Queries */
