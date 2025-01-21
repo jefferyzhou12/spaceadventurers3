@@ -1,6 +1,5 @@
 /* General Styles */
 html {
-    background-color: black;
     font-size: 2vw;
     font-family: "Roboto", Helvetica, sans-serif;
 }
@@ -16,6 +15,14 @@ p+p {
 
 button {
     color: black;
+}
+
+em {
+    font-style: italic;
+}
+
+h2 {
+    margin-bottom: 15px;
 }
 
 /* Header Styles */
@@ -120,6 +127,26 @@ main {
     border: 2px solid #333;
     border-radius: 5px;
     font-size: 0.75rem;
+}
+
+.play-buttons:hover,
+.play-buttons:focus,
+.play-buttons:active {
+    background-color: #ddd;
+}
+
+/* Mission Banner */
+#mission-banner {
+    color: white;
+    background-image: url("../images/Background-Img.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#mission-banner div {
+    background-color: #0008;
+    padding: 25px;
 }
 
 /* Media Queries */
