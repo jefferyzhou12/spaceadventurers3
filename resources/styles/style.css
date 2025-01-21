@@ -22,6 +22,7 @@ em {
 }
 
 h2 {
+    font-size: 30px;
     margin-bottom: 15px;
 }
 
@@ -147,6 +148,24 @@ main {
 #mission-banner div {
     background-color: #0008;
     padding: 25px;
+}
+
+/* Gameplay Banner */
+#gameplay-banner {
+    padding: 25px;
+}
+
+#slideshow-container {
+    display: grid;
+    grid-template: 1fr / 1fr;
+}
+
+#slideshow-container figure {
+    grid-area: 1 / 1 / 1 / 1;
+}
+
+#slideshow-container img {
+    width: 100%;
 }
 
 /* Media Queries */
