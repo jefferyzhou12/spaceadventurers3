@@ -22,7 +22,7 @@ em {
 }
 
 h2 {
-    font-size: 30px;
+    font-size: 40px;
     margin-bottom: 15px;
 }
 
@@ -153,12 +153,23 @@ main {
 /* Gameplay Banner */
 #gameplay-banner {
     padding: 25px;
+    background-color: #B2D5FF;
 }
 
 #slideshow {
+    margin-top: 30px;
     display: flex;
     justify-content: space-around;
     align-items: center;
+}
+
+#slideshow button {
+    width: 3.5em;
+    height: 2.5em;
+    font-size: 1rem;
+    background-color: #9BCAFF;
+    border: 5px solid #3392FE;
+    border-radius: 10px;
 }
 
 #slideshow-container {
@@ -169,10 +180,22 @@ main {
 
 #slideshow-container figure {
     grid-area: 1 / 1 / 1 / 1;
+    padding: 0.75rem;
+    background-color: #68AFFF;
+    border-radius: 20px;
 }
 
 #slideshow-container img {
     width: 100%;
+    border-radius: 10px;
+}
+
+figcaption {
+    margin-top: 0.25rem;
+}
+
+figcaption h3 {
+    text-align: center;
 }
 
 /* Media Queries */
