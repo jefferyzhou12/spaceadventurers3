@@ -198,6 +198,11 @@ figcaption h3 {
     text-align: center;
 }
 
+h4 {
+    text-align: center;
+    margin-top: 1rem;
+}
+
 /* Media Queries */
 @media only screen and (max-width: 768px) {
     header nav {
