@@ -155,9 +155,16 @@ main {
     padding: 25px;
 }
 
+#slideshow {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
 #slideshow-container {
-    display: grid;
+    display: inline-grid;
     grid-template: 1fr / 1fr;
+    width: 75%;
 }
 
 #slideshow-container figure {
