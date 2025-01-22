@@ -183,6 +183,7 @@ main {
     padding: 0.75rem;
     background-color: #68AFFF;
     border-radius: 20px;
+    display: none;
 }
 
 #slideshow-container img {
@@ -198,7 +199,7 @@ figcaption h3 {
     text-align: center;
 }
 
-h4 {
+#slide-num {
     text-align: center;
     margin-top: 1rem;
 }
