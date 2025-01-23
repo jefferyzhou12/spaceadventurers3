@@ -26,6 +26,10 @@ h2 {
     margin-bottom: 15px;
 }
 
+section {
+    padding: 25px;
+}
+
 /* Header Styles */
 header {
     background-color: black;
@@ -99,7 +103,6 @@ main {
 
 /* Play Banner */
 #play-banner {
-    padding: 25px;
     background-color: white;
     display: grid;
     grid-template-areas: "article button1"
@@ -138,6 +141,7 @@ main {
 
 /* Mission Banner */
 #mission-banner {
+    padding: 0;
     color: white;
     background-image: url("../images/Background-Img.jpg");
     background-repeat: no-repeat;
@@ -152,7 +156,6 @@ main {
 
 /* Gameplay Banner */
 #gameplay-banner {
-    padding: 25px;
     background-color: #B2D5FF;
 }
 
@@ -203,6 +206,12 @@ figcaption h3 {
 #slide-num {
     text-align: center;
     margin-top: 1rem;
+}
+
+/* Our Team Banner */
+#team-container {
+    display: grid;
+    grid-template: repeat(2, 1fr) / repeat(2, 45%);
 }
 
 /* Media Queries */
