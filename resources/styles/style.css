@@ -210,8 +210,28 @@ figcaption h3 {
 
 /* Our Team Banner */
 #team-container {
+    margin-top: 15px;
     display: grid;
-    grid-template: repeat(2, 1fr) / repeat(2, 45%);
+    grid-template: repeat(2, 1fr) / repeat(2, 47.5%);
+    row-gap: 20px;
+    column-gap: 2.5%;
+}
+
+.team-members {
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+.team-members img {
+    border-radius: 10px;;
+    width: 15%;
+}
+
+.team-members h3 {
+    float: right;
+    margin-right: 20px;
+    margin-top: 1em;
+    font-size: 1.5rem;
 }
 
 /* Media Queries */
