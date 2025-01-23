@@ -184,6 +184,7 @@ main {
     background-color: #68AFFF;
     border-radius: 20px;
     display: none;
+    box-shadow: 0 0 10px #8888;
 }
 
 #slideshow-container img {
