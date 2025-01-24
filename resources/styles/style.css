@@ -235,6 +235,11 @@ figcaption h3 {
     font-size: 1.5rem;
 }
 
+.team-members article {
+    border-top: 1px solid black;
+    padding: 15px;
+}
+
 /* Media Queries */
 @media only screen and (max-width: 768px) {
     header nav {
