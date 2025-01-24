@@ -26,6 +26,10 @@ h2 {
     margin-bottom: 15px;
 }
 
+section {
+    padding: 25px;
+}
+
 /* Header Styles */
 header {
     background-color: black;
@@ -86,6 +90,7 @@ main {
     background-size: cover;
     width: 100%;
     height: 700px;
+    padding: 0;
     display: flex;
     align-items: center;
 }
@@ -99,7 +104,6 @@ main {
 
 /* Play Banner */
 #play-banner {
-    padding: 25px;
     background-color: white;
     display: grid;
     grid-template-areas: "article button1"
@@ -138,6 +142,7 @@ main {
 
 /* Mission Banner */
 #mission-banner {
+    padding: 0;
     color: white;
     background-image: url("../images/Background-Img.jpg");
     background-repeat: no-repeat;
@@ -152,7 +157,6 @@ main {
 
 /* Gameplay Banner */
 #gameplay-banner {
-    padding: 25px;
     background-color: #B2D5FF;
 }
 
@@ -184,6 +188,7 @@ main {
     background-color: #68AFFF;
     border-radius: 20px;
     display: none;
+    box-shadow: 0 0 10px #8888;
 }
 
 #slideshow-container img {
@@ -202,6 +207,37 @@ figcaption h3 {
 #slide-num {
     text-align: center;
     margin-top: 1rem;
+}
+
+/* Our Team Banner */
+#team-container {
+    margin-top: 15px;
+    display: grid;
+    grid-template: repeat(2, 1fr) / repeat(2, 47.5%);
+    row-gap: 20px;
+    column-gap: 2.5%;
+}
+
+.team-members {
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+.team-members img {
+    border-radius: 10px;;
+    width: 15%;
+}
+
+.team-members h3 {
+    float: right;
+    margin-right: 20px;
+    margin-top: 1em;
+    font-size: 1.5rem;
+}
+
+.team-members article {
+    border-top: 1px solid black;
+    padding: 15px;
 }
 
 /* Media Queries */
@@ -227,6 +263,25 @@ figcaption h3 {
 
     .play-buttons {
         font-size: 1.5rem;
+    }
+
+    .team-members img {
+        display: none;
+    }
+
+    .team-members h3 {
+        float: none;
+        margin: 10px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    #team-container {
+        grid-template: repeat(4, 1fr) / 1fr;
+    }
+
+    .team-members h3 {
+        font-size: 18px;
     }
 }
 
