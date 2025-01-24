@@ -264,6 +264,25 @@ figcaption h3 {
     .play-buttons {
         font-size: 1.5rem;
     }
+
+    .team-members img {
+        display: none;
+    }
+
+    .team-members h3 {
+        float: none;
+        margin: 10px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    #team-container {
+        grid-template: repeat(4, 1fr) / 1fr;
+    }
+
+    .team-members h3 {
+        font-size: 18px;
+    }
 }
 
 @media only screen and (max-width: 425px) {
