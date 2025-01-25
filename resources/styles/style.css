@@ -240,6 +240,11 @@ figcaption h3 {
     padding: 15px;
 }
 
+/* Contact Banner */
+#contact-banner {
+    background: linear-gradient(hsl(25, 100%, 75%), hsl(25, 100%, 85%));
+}
+
 /* Media Queries */
 @media only screen and (max-width: 768px) {
     header nav {
