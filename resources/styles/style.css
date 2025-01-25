@@ -240,6 +240,33 @@ figcaption h3 {
     padding: 15px;
 }
 
+/* Contact Banner */
+#contact-banner {
+    background: linear-gradient(hsl(25, 100%, 75%), hsl(25, 100%, 85%));
+    font-size: 20px;
+}
+
+#contact-banner form {
+    margin: 10px;
+    padding: 5px;
+}
+
+form label,
+form span {
+    margin: 5px;
+    margin-left: 0;
+}
+
+form input {
+    margin: 5px 0;
+}
+
+#submit {
+    width: 100px;
+    height: 25px;
+    font-size: 16px;
+}
+
 /* Media Queries */
 @media only screen and (max-width: 768px) {
     header nav {
