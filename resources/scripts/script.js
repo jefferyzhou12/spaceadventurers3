@@ -51,7 +51,6 @@ const updateBio = () => {
 
 // Initial Code
 slideshowElements[0].style.display = 'block';
-slideNum.innerHTML = 'Slide 1 / 6';
 
 // Event Listeners
 backButton.onclick = lastSlide;
