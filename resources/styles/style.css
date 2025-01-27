@@ -4,6 +4,11 @@ html {
     font-family: "Roboto", Helvetica, sans-serif;
 }
 
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
 p {
     font-size: 16px;
     font-family: Courier, monospace;
@@ -66,8 +71,6 @@ header {
     display: inline-block;
     padding: 15px 10px;
     border-radius: 5px;
-    text-decoration: none;
-    color: white;
 }
 
 .nav-links a:hover,
@@ -267,6 +270,32 @@ form input {
     font-size: 16px;
 }
 
+/* Footer */
+footer {
+    color: white;
+    background-color: black;
+    font-size: 15px;
+    padding: 5px 25px 10px 10px;
+    display: grid;
+    justify-items: center;
+}
+
+footer img {
+    width: 125px;
+    margin-bottom: 25px;
+}
+
+footer ul {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer li {
+    display: inline-block;
+    padding: 0 25px;
+}
+
 /* Media Queries */
 @media only screen and (max-width: 768px) {
     header nav {
@@ -300,15 +329,39 @@ form input {
         float: none;
         margin: 10px;
     }
+
+    #slideshow button {
+        width: 53.75px;
+        height: auto;
+        font-size: 15.36px;
+    }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 615px) {
     #team-container {
         grid-template: repeat(4, 1fr) / 1fr;
     }
 
     .team-members h3 {
         font-size: 18px;
+    }
+
+    footer {
+        font-size: 1.21911573472rem;
+    }
+
+    footer li {
+        padding: 0 1.66666666667em;
+    }
+}
+
+@media only screen and (max-width: 452px) {
+    footer nav {
+        display: none;
+    }
+
+    footer img {
+        margin: 0;
     }
 }
 
