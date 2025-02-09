@@ -16,11 +16,6 @@ Programing Languages
 * JavaScript
 * C#
 
-Libraries
-* Node.js
-
-_Unity Libraries are not listed_
-
 Softwares
 * BASH
 * Visual Studio Code
