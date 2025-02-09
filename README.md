@@ -17,7 +17,7 @@ Programing Languages
 * C#
 
 Libraries
-* Node.js/
+* Node.js\
 _Unity Libraries are not listed_
 
 Softwares
